@@ -1,0 +1,29 @@
+.NavBar{
+    padding: 0;
+    background-color: rgb(17, 16, 16);
+    width:auto;
+    margin:auto;
+
+}
+
+.NavBar li button{
+    border-radius: 1rem;
+    color: white;
+    padding: 20px;
+    display:block;
+}
+.NavBar li {
+    display:inline-block;
+    text-align: center;
+    margin: 1rem;
+}
+
+button{
+    background-color: rgb(39, 38, 38);
+}
+.LogoNav{
+    width: 100px;
+    height: 100px;
+
+
+}
