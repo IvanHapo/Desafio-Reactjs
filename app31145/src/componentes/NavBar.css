@@ -1,29 +1,20 @@
 .NavBar{
-    padding: 0;
-    background-color: rgb(17, 16, 16);
-    width:auto;
-    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(27, 27, 27);
 
 }
-
-.NavBar li button{
-    border-radius: 1rem;
-    color: white;
-    padding: 20px;
-    display:block;
-}
-.NavBar li {
-    display:inline-block;
-    text-align: center;
-    margin: 1rem;
+.LogoNav{
+    width: 80px;
+    border-radius: 1.5rem;
 }
 
 button{
-    background-color: rgb(39, 38, 38);
-}
-.LogoNav{
+    border-radius: 5px;
     width: 100px;
-    height: 100px;
-
-
+    height: 50px;
+    margin: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

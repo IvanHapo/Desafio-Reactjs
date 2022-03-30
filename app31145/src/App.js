@@ -1,13 +1,14 @@
 import './App.css';
 import NavBar from './componentes/NavBar';
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <NavBar/>
-      </header>
+        <ItemListContainer greeting='Bienvendio a Trazos'/>
     </div>
+
   );
 }
 
