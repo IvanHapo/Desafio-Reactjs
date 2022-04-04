@@ -1,0 +1,22 @@
+/* No queira hacer posicionarlo asi pero no me acuerdo como hacerlo de la otra forma*/
+
+.fullCart{
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    border-radius: 1rem;
+}
+.cardCount {
+    color: white;
+    text-align: center;
+}
+.cardCount2 {
+    text-align: center;
+}
+.addCarrito{
+    text-align: center;
+    margin-top: 30px;
+    
+}
