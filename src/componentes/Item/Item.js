@@ -1,6 +1,6 @@
 import './Item.css'
 
-const Item = ({ nombre, img}) => {
+const Item = ({ id, nombre, img}) => {
     return(
         <div className='card-container'>
             <div className='imagen-container'>
@@ -13,6 +13,8 @@ const Item = ({ nombre, img}) => {
             <div className='btn'>
                 <button>Ver más</button>
             </div>
+            <footer >
+            </footer>
         </div>
         
     )
