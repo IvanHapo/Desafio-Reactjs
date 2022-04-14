@@ -7,16 +7,21 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
 
-  const handleOnAdd = (quantity) => {
-    console.log(`se agregaron ${quantity} productos`)
-  }
-
   return (
     <div className="App">
-        <NavBar/>
-        <ItemListContainer greeting='Bienvendio a Trazos'/>
-        <ItemCount initial={1} stock={10} onAdd={handleOnAdd}/>
-        <ItemDetailContainer/>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            {/* <Route path='/' element={<h1>HOME</h1>} />
+            <Route path='/list' element={<ItemListContainer />} />
+            <Route path='/detail' element={<ItemDetailContainer />} />
+            <Route path='*' element={<h1>NOT FOUND 404</h1>} /> */}
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/category/:categoryId' element={<ItemListContainer />} />
+            <Route path='/detail/:productId' element={<ItemDetailContainer />} />
+            <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
+          </Routes>
+        </BrowserRouter>
     </div>
 
   );

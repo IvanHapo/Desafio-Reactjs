@@ -2,7 +2,7 @@ import './ItemDetail.css'
 
 const ItemDetail = ({ nombre, img, descripcion, precio,categoria }) => {
     return (
-        <article className="">
+        <article className="card-contenedor">
             <header className="">
                 <h2 className="">
                     {nombre}
@@ -15,7 +15,7 @@ const ItemDetail = ({ nombre, img, descripcion, precio,categoria }) => {
                 <p className="">
                     Categoria: {categoria}
                 </p>
-                <p className="">
+                <p className="text-description">
                     Descripción: {descripcion}
                 </p>
                 <p className="">
