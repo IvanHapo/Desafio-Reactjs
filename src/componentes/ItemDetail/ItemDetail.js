@@ -68,7 +68,7 @@ const ItemDetail = ({ id, nombre, img, categoria, descripcion, precio, stock }) 
                 </p>
             </div>           
             <footer>
-                { isInCart(id) ? <Link to='/cart'>Ir al carrito</Link> : <Count onConfirm={handleAdd} stock={stock}/> } 
+                { isInCart(id) ? <Link to='/itemcart'>Ir al carrito</Link> : <Count onConfirm={handleAdd} stock={stock}/> } 
             </footer>
         </div>
     )

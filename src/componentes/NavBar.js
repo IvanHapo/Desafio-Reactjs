@@ -18,7 +18,7 @@ const NavBar = () => {
             <Link to='/'>
                 <img src={"./images/Logo-Trazos.png"} className="LogoNav" alt="" />
             </Link>
-            <div>
+            <div className='butonNav'>
             { categories.map(cat => <NavLink key={cat.id} to={`/category/${cat.id}`}>{cat.description}</NavLink>)}
             </div>
             <div>

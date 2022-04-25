@@ -11,10 +11,18 @@
     border-radius: 1.5rem;
 }
 
-button{
+.butonNav{
+    padding: 0.5rem;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    color: rgb(23, 23, 23);
     border-radius: 5px;
-    width: 100px;
-    height: 50px;
-    margin: 10px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.2s;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.butonNav:hover{
+    background: rgb(169, 169, 169);
 }

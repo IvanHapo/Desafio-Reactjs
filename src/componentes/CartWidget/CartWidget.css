@@ -17,6 +17,11 @@
     cursor: pointer;
     outline: inherit;
     font-size: medium;
+    transition: 0.3s;
+}
+
+.CartWidget:hover{
+    background: rgb(169, 169, 169);
 }
 
 .CartImg {
