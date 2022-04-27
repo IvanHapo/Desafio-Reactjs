@@ -11,7 +11,7 @@ const productos = [
     {
         id :'2',
         nombre : 'Lapices de Colores',
-        descripcion : '',
+        descripcion : 'Lapices de calidad para colorear',
         categoria : 'escuela',
         precio : 100,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgiZeIZZMuN8fr1NVFhyoRCZwPY0JfF9yTw&usqp=CAU',
@@ -20,7 +20,7 @@ const productos = [
     {
         id :'3',
         nombre : 'Mochila Nike',
-        descripcion : '',
+        descripcion : 'Mochila original Nike importada',
         categoria : 'escuela',
         precio : 2000,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy0PbpJhM-PUpjn-BD3FTewiPcpJgIz8fMnw&usqp=CAU',
@@ -28,8 +28,8 @@ const productos = [
     },
     {
         id :'4',
-        nombre : 'Carpeta',
-        descripcion : '',
+        nombre : 'Cuaderno',
+        descripcion : 'Cuaderno para tomar apuntes ',
         categoria : 'colegio',
         precio : 100,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9rOzxw4PnqtUJQKnvELtasESUUic0XIwXRA&usqp=CAU',
@@ -38,7 +38,7 @@ const productos = [
     {
         id :'5',
         nombre : 'Borrador',
-        descripcion : '',
+        descripcion : 'Borrador de goma economico',
         categoria : 'colegio',
         precio : 20,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy3WdeWk-FedeW8a43sKXcEtqh4XeTR5q7eg&usqp=CAU',
@@ -47,7 +47,7 @@ const productos = [
     {
         id :'6',
         nombre : 'Biromes',
-        descripcion : '',
+        descripcion : 'Biromes Bic de tinta larga vida',
         categoria : 'jardin',
         precio : 50,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pmfYZnMfyz8vXa2IQF1NWlkbrc2Ic5Rh2Q&usqp=CAU',
@@ -56,7 +56,7 @@ const productos = [
     {
         id :'7',
         nombre : 'Separadores',
-        descripcion : '',
+        descripcion : 'Separadores con dibujos para carpeta',
         categoria : 'jardin',
         precio : 100,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-iezH82c34WbwbfAdRZQkIUhZLS5c6W8xJg&usqp=CAU',
@@ -65,7 +65,7 @@ const productos = [
     {
         id :'8',
         nombre : 'Carpeta Anillada',
-        descripcion : '',
+        descripcion : 'Carpeta de plastico flexible',
         categoria : 'jardin',
         precio : 200,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9dCfpLgHAqe5r7-S01ouF2QRrOkjQEXUm0J81VR6uFPSD40WX2sxaf15B1uPkiSFBgtw&usqp=CAU',
