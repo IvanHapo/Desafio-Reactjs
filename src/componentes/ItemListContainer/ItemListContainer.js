@@ -8,7 +8,7 @@ import { firestoreDb } from '../../services/firebase'
 
 
 const ItemListContainer = (props) => {
-    const [productos, setProducts] = useState ([])
+    const [products, setProducts] = useState ([])
 
     const { categoryId } = useParams()
     
@@ -20,21 +20,21 @@ const ItemListContainer = (props) => {
         // })
 
         const collectionRef = categoryId
-        ? query(collection(firestoreDb, 'productos'), where('categoria', '==', categoryId))
-        :query(collection(firestoreDb, 'productos'), orderBy("nombre", "desc"), limit(4))
+        ? query(collection(firestoreDb, 'products'), where('category', '==', categoryId))
+        :query(collection(firestoreDb, 'products'), orderBy("nombre", "desc"), limit(4))
        // : collection(firestoreDb, 'productos')
 
         getDocs( collectionRef ).then(response => {
             console.log(response)
-            const productos = response.docs.map(doc => {
+            const products = response.docs.map(doc => {
                 return { id: doc.id, ...doc.data()}
             })
-            setProducts(productos)
+            setProducts(products)
         })
 
     }, [categoryId])
 
-    if(productos.length === 0) {
+    if(products.length === 0) {
         return <h1>No hay productos</h1>
     }
 
@@ -42,7 +42,7 @@ const ItemListContainer = (props) => {
     return(
         <div>
             <h1>{props.greeting}</h1>
-            <ItemList productos={productos}/>
+            <ItemList products={products}/>
         </div>
     )
 }
