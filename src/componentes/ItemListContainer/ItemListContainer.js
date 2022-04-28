@@ -21,14 +21,15 @@ const ItemListContainer = (props) => {
 
         const collectionRef = categoryId
         ? query(collection(firestoreDb, 'products'), where('category', '==', categoryId))
-        :query(collection(firestoreDb, 'products'), orderBy("nombre", "desc"), limit(4))
-       // : collection(firestoreDb, 'productos')
+        : query(collection(firestoreDb, 'products'), orderBy("nombre", "desc"), limit(4))
+        // : collection(firestoreDb, 'products')
 
         getDocs( collectionRef ).then(response => {
             console.log(response)
             const products = response.docs.map(doc => {
                 return { id: doc.id, ...doc.data()}
             })
+
             setProducts(products)
         })
 
