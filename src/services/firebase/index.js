@@ -3,12 +3,12 @@ import { getFirestore } from 'firebase/firestore'
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDvznuf_uuY_MvNoz5iAcNBkrCSLzOXCTs",
-  authDomain: "ecommerce-react-50ccd.firebaseapp.com",
-  projectId: "ecommerce-react-50ccd",
-  storageBucket: "ecommerce-react-50ccd.appspot.com",
-  messagingSenderId: "420531420995",
-  appId: "1:420531420995:web:4e20e45f394f759862b9f6"
+  apiKey: "AIzaSyBdKWoG05yast6urSr-KoZAHUjEpWtJBJY",
+  authDomain: "ecommerce31145-6a40b.firebaseapp.com",
+  projectId: "ecommerce31145-6a40b",
+  storageBucket: "ecommerce31145-6a40b.appspot.com",
+  messagingSenderId: "687647752605",
+  appId: "1:687647752605:web:59458f716f0b24be1cef74"
 };
 
 

@@ -21,23 +21,23 @@ const ButtonCount = ({ onConfirm, stock, initial = 1 }) => {
     return (
         <div>
             <p>{count}</p>
-            <button onClick={decrement}>-</button>
-            <button onClick={increment}>+</button>
-            <button onClick={() => onConfirm(count)}>Agregar al carrito</button>
+            <button onClick={decrement} className = 'buttonCart'>-</button>
+            <button onClick={increment} className = 'buttonCart'>+</button>
+            <button onClick={() => onConfirm(count)} className = 'buttonCart'>Agregar al carrito</button>
         </div>
     )
 }
 
 
 
-const ItemDetail = ({ id, nombre, img, categoria, descripcion, precio, stock }) => { 
+const ItemDetail = ({ id, nombre, img, category, descripcion, precio, stock }) => { 
 
     const {addItem, isInCart} = useContext(CartContext)
 
     const handleAdd = (count) => {
 
         const productObj = {
-            id, nombre, precio
+            id, nombre, precio,
         }
 
         addItem ({...productObj, quantity: count})
@@ -58,7 +58,7 @@ const ItemDetail = ({ id, nombre, img, categoria, descripcion, precio, stock }) 
             </picture>
             <div>
                 <p>
-                    Categoria: {categoria}
+                    Categoria: {category}
                 </p>
                 <p className="text-description">
                     Descripción: {descripcion}
@@ -68,7 +68,7 @@ const ItemDetail = ({ id, nombre, img, categoria, descripcion, precio, stock }) 
                 </p>
             </div>           
             <footer>
-                { isInCart(id) ? <Link to='/itemcart'>Ir al carrito</Link> : <Count onConfirm={handleAdd} stock={stock}/> } 
+                { isInCart(id) ? <Link className='goCart' to='/itemcart'> <strong>Ir al carrito</strong> </Link> : <Count onConfirm={handleAdd} stock={stock}/> } 
             </footer>
         </div>
     )

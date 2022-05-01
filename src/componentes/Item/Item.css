@@ -20,9 +20,11 @@
     border-radius: 10px;
 }
 
+
+
 .imagen-container{
     overflow: hidden;
-    height: 200px;
+    max-height: 200px;
     text-align: center;
 }
 .card-content{
@@ -36,7 +38,8 @@ h3{
 .card-title{
     margin-bottom: 0.5rem;
 }
-.text-precio{
+.text-price{
+    margin-top: 1rem;
     color: black;
 }
 .btn{

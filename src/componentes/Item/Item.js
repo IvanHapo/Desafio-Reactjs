@@ -13,7 +13,7 @@ const Item = ({ id, nombre, img, precio}) => {
                 <h3 className='card-title'>{nombre}</h3>
             </div>
             <div>
-                <p className=''>
+                <p className='text-price'>
                     Precio: ${precio}
                 </p>
             </div>

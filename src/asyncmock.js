@@ -5,7 +5,7 @@ const products = [
         descripcion : 'Carpetas de color economicas para guardar papeles',
         category : 'escuela',
         precio : 200,
-        img : 'https://www.distribuidoraorfei.com.ar/fotito/250/250/XY/grafica/productos/070000/071457-01-01.jpg',
+        img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAnPtDxDesa37o3thSOhd7wIvpkre8BI7vnQ&usqp=CAU',
         stock: 5
     },
     {
@@ -60,7 +60,7 @@ const products = [
         category : 'jardin',
         precio : 100,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-iezH82c34WbwbfAdRZQkIUhZLS5c6W8xJg&usqp=CAU',
-        stock: 10
+        stock: 9
     },
     {
         id :'8',

@@ -13,17 +13,11 @@ const ItemListContainer = (props) => {
     const { categoryId } = useParams()
     
     useEffect(() => {
-        // getProducts(categoryId).then(prods => {
-        //     setProducts(prods)
-        // }).catch(error => {
-        //     console.log(error)
-        // })
-
         const collectionRef = categoryId
         ? query(collection(firestoreDb, 'products'), where('category', '==', categoryId))
-        : query(collection(firestoreDb, 'products'), orderBy("nombre", "desc"), limit(4))
-        // : collection(firestoreDb, 'products')
+        : query(collection(firestoreDb, 'products'), orderBy("nombre", "desc"), limit(9))
 
+        
         getDocs( collectionRef ).then(response => {
             console.log(response)
             const products = response.docs.map(doc => {
@@ -45,6 +39,7 @@ const ItemListContainer = (props) => {
             <h1>{props.greeting}</h1>
             <ItemList products={products}/>
         </div>
+
     )
 }
 
