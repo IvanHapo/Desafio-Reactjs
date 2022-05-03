@@ -5,8 +5,9 @@
 }
 .card-container {
     width: 300px;
+    max-height: 500px;
     overflow: hidden;
-    box-shadow: 0px 0px 15px -5px;
+    box-shadow: 0px 0px 12px -5px;
     transition: 0.3s;
     animation: ease-in-out;
     margin-left: 2rem;
@@ -16,7 +17,7 @@
 }
 .card-container:hover{
     transform: scale(1.1);
-    box-shadow: 0px 0px 15px 0px;
+    box-shadow: 0px 0px 10px 0px;
     border-radius: 10px;
 }
 
@@ -37,9 +38,10 @@ h3{
 }
 .card-title{
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 .text-price{
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: black;
 }
 .btn{
@@ -53,6 +55,7 @@ h3{
     color: rgb(23, 23, 23);
     border-radius: 5px;
     transition: 0.2s;
+    margin-top: -2rem;
     margin-bottom: 1rem;
     font-weight: bold;
     text-decoration: none;
