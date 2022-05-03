@@ -38,7 +38,7 @@ const FinishOrder = () => {
     const createOrder = async  () => {
     setOrderStatus('procesando')    
     const order = {
-        ItemsOrder: cart.map(p=> {return ({id: p.id, title: p.title, price: p.price, quantity: p.quantity })}),
+        ItemsOrder: cart.map(p=> {return ({id: p.id, nombre: p.nombre, precio: p.precio, quantity: p.quantity })}),
         form: buyer,
         total: getTotal(),
         date: new Date()
