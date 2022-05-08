@@ -6,7 +6,7 @@ const products = [
         category : 'escuela',
         precio : 200,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAnPtDxDesa37o3thSOhd7wIvpkre8BI7vnQ&usqp=CAU',
-        stock: 5
+        stock: 50
     },
     {
         id :'2',
@@ -15,7 +15,7 @@ const products = [
         category : 'escuela',
         precio : 100,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgiZeIZZMuN8fr1NVFhyoRCZwPY0JfF9yTw&usqp=CAU',
-        stock: 9
+        stock: 50
     },
     {
         id :'3',
@@ -24,7 +24,7 @@ const products = [
         category : 'escuela',
         precio : 2000,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy0PbpJhM-PUpjn-BD3FTewiPcpJgIz8fMnw&usqp=CAU',
-        stock: 3
+        stock: 50
     },
     {
         id :'4',
@@ -33,7 +33,7 @@ const products = [
         category : 'colegio',
         precio : 100,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9rOzxw4PnqtUJQKnvELtasESUUic0XIwXRA&usqp=CAU',
-        stock: 9
+        stock: 50
     },
     {
         id :'5',
@@ -42,7 +42,7 @@ const products = [
         category : 'colegio',
         precio : 20,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy3WdeWk-FedeW8a43sKXcEtqh4XeTR5q7eg&usqp=CAU',
-        stock: 8
+        stock: 50
     },
     {
         id :'6',
@@ -51,7 +51,7 @@ const products = [
         category : 'jardin',
         precio : 50,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pmfYZnMfyz8vXa2IQF1NWlkbrc2Ic5Rh2Q&usqp=CAU',
-        stock: 9
+        stock: 50
     },
     {
         id :'7',
@@ -60,7 +60,7 @@ const products = [
         category : 'jardin',
         precio : 100,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-iezH82c34WbwbfAdRZQkIUhZLS5c6W8xJg&usqp=CAU',
-        stock: 9
+        stock: 50
     },
     {
         id :'8',
@@ -69,7 +69,7 @@ const products = [
         category : 'jardin',
         precio : 200,
         img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9dCfpLgHAqe5r7-S01ouF2QRrOkjQEXUm0J81VR6uFPSD40WX2sxaf15B1uPkiSFBgtw&usqp=CAU',
-        stock: 7
+        stock: 50
     },
     
 ]
@@ -84,7 +84,7 @@ export const getCategories = () => {
     return new Promise(resolve => {
         setTimeout(() => {
             resolve(categories)
-        }, 500)
+        }, 300)
     })
 }
 
@@ -92,7 +92,7 @@ export const getProducts = (categoryId) => {
     return new Promise (resolve => {
         setTimeout(() => {
             resolve(categoryId ? products.filter(prod => prod.category === categoryId) : products)
-        }, 500)
+        }, 300)
     })
 }
 
@@ -101,6 +101,6 @@ export const getProductsById = (id) => {
     return new Promise (resolve => {
         setTimeout(() => {
             resolve(products.find(prod => prod.id === id))
-        }, 500)
+        }, 300)
     })
 }

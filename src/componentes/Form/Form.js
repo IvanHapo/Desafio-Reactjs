@@ -1,9 +1,9 @@
-import './FinishOrder.css'
+import './Form.css'
 import CartContext from "../../context/CartContext"
 import { useContext, useState } from "react"
 import { firestoreDb} from '../../services/firebase/index'
 import { collection, addDoc, getDocs, where, query,documentId, writeBatch } from "firebase/firestore"
-import { Link } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 
 
 const buyerForm= {
@@ -13,7 +13,7 @@ const buyerForm= {
 }
 
 
-const FinishOrder = () => {
+const Form = () => {
     
     const { cart, clearCart ,getTotal } = useContext(CartContext)
 
@@ -78,11 +78,13 @@ const orderAndStock = () =>{
 if(orderStatus === 'confirmado') {
     return(
         <>
-        <div className = "finalyOrder">
-        <h1>Gracias por tu compra.</h1>
-        <p>Tu numero de orden es: <strong> {orderId} </strong>.</p>
-        <h3>No olvides tomar nota de tu orden para retirar tus productos</h3>
-        <button className="goHome"><Link to='/' >Pagina Principal</Link>  </button>
+        <div className = 'orderFinal'>
+            <h1>Gracias por tu compra.</h1>
+            <p>Tu numero de orden es: <strong> {orderId} </strong>.</p>
+            <h3>Guarde su numero de orden para retirar su producto.</h3>
+        <div>
+            <button><NavLink className="goHome" to='/' >Volver al Inicio</NavLink>  </button>
+        </div>
         </div>
         </>
     )
@@ -123,10 +125,10 @@ if(orderStatus === 'confirmado') {
                             onChange={getForm}
                             className="form__input" 
                             placeholder="Escribí tu email" />
-                <button onClick={() => orderAndStock()} className="formButon"> Ordenar </button>
+                <button onClick={() => orderAndStock()} className="formButon"> Enviar </button>
             </form>
         </div>
         </>
     )
 }
-export default FinishOrder
+export default Form

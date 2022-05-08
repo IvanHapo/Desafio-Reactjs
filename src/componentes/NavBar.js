@@ -1,31 +1,57 @@
 import './NavBar.css'
 import CartWidget from './CartWidget/CartWidget'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { getCategories } from '../asyncmock'
+import { firestoreDb } from "../services/firebase/index";
+import { getDocs, collection } from "firebase/firestore";
+
 
 const NavBar = () => {
-    const [categories, setCategories] = useState([])
+    const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        getCategories().then(categories => {
-        setCategories(categories)
-        })
-    }, [])
+        getDocs(collection(firestoreDb, "categories")).then((response) => {
+        const categories = response.docs.map((doc) => {
+        return { id: doc.id, ...doc.data() };
+        });
+        setCategories(categories);
+    });
+    }, []);
 
-    return(
-        <nav className="NavBar" >
-            <Link to='/'>
+
+
+return (
+    <nav className="NavBar">
+        <ul className="componentes-NavBar">
+            <NavLink to="/" >
                 <img src={"./images/Logo-Trazos.png"} className="LogoNav" alt="" />
-            </Link>
-            <div className='butonNav'>
-            { categories.map(cat => <NavLink key={cat.id} to={`/category/${cat.id}`}>{cat.description}</NavLink>)}
-            </div>
-            <div>
-                <CartWidget/>
-            </div>
-        </nav>
+            </NavLink>
+        <li id="elements-NavBar">
+            <NavLink to="/">
+                Inicio
+            </NavLink>
+        </li>
+        <li id="elements-NavBar">
+        <NavLink to="/category">
+            Categorias
+        </NavLink>
+        <ul className="menu-vertical">
+            {categories.map((categoria) => (
+                <NavLink
+                key={categoria.id}
+                to={`/category/${categoria.id}`}>
+                {categoria.description}
+                </NavLink>
+            ))}
+        </ul>
+        </li>
+        <li>
+            <CartWidget />
+        </li>
+        </ul>
+    </nav>
     )
 }
+
 
 export default NavBar

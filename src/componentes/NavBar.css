@@ -1,4 +1,70 @@
 .NavBar{
+    height: 100px;
+    padding: 5px;
+    background-color: rgb(27, 27, 27);
+}
+
+.LogoNav{
+    bottom: 10px;
+    width: 80px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 1.5rem;
+}
+.cartWidget{
+    color: black;
+}
+
+.componentes-NavBar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.componentes-NavBar li a {
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.componentes-NavBar li:hover {
+    background-color: rgb(53, 52, 52);
+    height: 60px;
+    border-radius: 10px;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.componentes-NavBar li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical a:hover {
+    background-color: rgb(53, 52, 52) ;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 10px, 10px, 85px, 10px;
+    text-decoration: none;
+}
+.menu-vertical li {
+    color: white;
+}
+
+
+/* .NavBar{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,4 +91,4 @@
 
 .butonNav:hover{
     background: rgb(169, 169, 169);
-}
+} */

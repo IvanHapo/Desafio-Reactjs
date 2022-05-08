@@ -20,11 +20,15 @@ const ButtonCount = ({ onConfirm, stock, initial = 1 }) => {
 
     return (
         <div>
-            <p>{count}</p>
-            <button onClick={decrement} className = 'buttonCart'>-</button>
-            <button onClick={increment} className = 'buttonCart'>+</button>
-            <button onClick={() => onConfirm(count)} className = 'buttonCart'>Agregar al carrito</button>
+            <div className='butonDetail'>
+                <button onClick={decrement} className = 'buttonCart'>-</button>
+                <p className='textCount'>{count}</p>
+                <button onClick={increment} className = 'buttonCart'>+</button>
+            </div>
+                <button onClick={() => onConfirm(count)} className = 'buttonCart'>Agregar al carrito</button>
         </div>
+
+
     )
 }
 
@@ -48,22 +52,20 @@ const ItemDetail = ({ id, nombre, img, category, descripcion, precio, stock }) =
 
     return (
         <div className="card-contenedor">
-            <header className="Header">
-                <h2 className="ItemHeader">
-                    {nombre}
-                </h2>
-            </header>
             <picture>
                 <img src={img} alt={nombre} className="ItemImg"/>
             </picture>
             <div>
+                <h3>{nombre} </h3>
+            </div>
+            <div>
                 <p>
                     Categoria: {category}
                 </p>
-                <p className="text-description">
+                <p>
                     Descripción: {descripcion}
                 </p>
-                <p >
+                <p>
                     Precio: {precio}
                 </p>
             </div>           

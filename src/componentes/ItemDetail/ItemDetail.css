@@ -14,10 +14,15 @@
 .btnAdd{
     background-color: rgb(29, 29, 29);
 }
-.text-description{
-    margin: 1rem;
-
+.butonDetail{
+    display: flex;
+    justify-content: center;
 }
+.textCount{
+    margin: 1rem;
+    padding: 10px;
+}
+
 .goCart{
     padding: 0.5rem;
     background-color: rgb(220, 220, 220);
@@ -47,6 +52,7 @@ footer{
     margin-bottom: 1rem;
     font-weight: bold;
     text-decoration: none;
+    margin: 1rem;
 
 }
 .buttonCart:hover{
