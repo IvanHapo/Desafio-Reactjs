@@ -58,7 +58,7 @@ En el Siguiete gif podras ver como realizar una compra:
 
 https://media.giphy.com/media/O9nHTtJJ4THABXkYdp/giphy.mp4
 
-## Construico con
+## Construido con
 
 - React
 - JavaScript

@@ -27,7 +27,7 @@ const Cart = () => {
         <div className="">
             <div className="productos-carrito">
                 <h1>Carrito</h1> 
-                {cart.map(prod => <li key={prod.id}>{prod.name} {prod.img}  <strong>Cantidad :</strong>  {prod.quantity}  <strong>Precio C/U :</strong>  {prod.precio}   <strong>SubTotal:</strong>  {prod.quantity * prod.precio} <button onClick={() => removeItem(prod.id)} className = 'button-carrito'>X</button></li>)}  Total : {getTotal()}
+                {cart.map(prod => <li key={prod.id}><strong>Nombre:</strong> {prod.nombre} <strong>Cantidad :</strong>  {prod.quantity}  <strong>Precio C/U :</strong>  {prod.precio}   <strong>SubTotal:</strong>  {prod.quantity * prod.precio} <button onClick={() => removeItem(prod.id)} className = 'button-carrito'>X</button></li>)}  Total : {getTotal()}
                 <button> <Link to='/order' className='generarOrden' > Finalizar compra </Link></button> 
             </div>
         </div>
