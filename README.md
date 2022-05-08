@@ -1,5 +1,5 @@
 # React
-## _Ecommer Trazos, Proyecto Final_ ❤️
+## _Ecommerce Trazos, Proyecto Final_ ❤️
 
 Proyecto realizado en el curso de React de [CoderHouse](https://www.coderhouse.com/?utm_term=coderhouse&utm_campaign=12058006243&utm_source=google_search_brand&utm_medium=cpc), curso dictado por el profesor Sebastian Zuviria y con la guia/ayuda de mi Tutor Santiago Pizzi.
 
